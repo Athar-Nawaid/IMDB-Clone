@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <section id="navBar">
+            <div id="logoCont">
+                <div id="logo"><a href="index.html"><img src="logo.png"></a></div>
+                <div id="title"><a href="index.html"><h1>IMDB <br> Clone</h1></a></div>
+            </div>
+            
+            <div>
+                <input type="text" id="inputSpace" placeholder="Seach Movies..." list="suggestions">
+
+                <datalist id="suggestions">
+                    
+                </datalist>
+
+                <button id="searchBtn">Search</button>
+            </div>
+            <div id="favourite">
+                
+                <img src="star.png" id="favImg"><br>
+                <p>Favourites</p>
+               
+            </div>
+    </section>
+
+    <section id="container">
+       <div id="errorCont">
+            <p>Search Results will show here!!!</p>
+            
+       </div>
+
+    </section>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
