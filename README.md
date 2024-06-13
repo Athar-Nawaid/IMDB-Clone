@@ -10,5 +10,5 @@ This application allows users to search for movies and manage their favorite mov
 - View Movie Details: Displays detailed information about a selected movie.<br>
 - Manage Favorites: Users can add movies to their favorites and view or remove them from the favorites list.<br>
 
-Front end project for coding ninjas
+Front end project for coding ninjas<br>
 Developed by - Athar Nawaid
