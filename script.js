@@ -62,10 +62,14 @@ searchBtn.addEventListener('click',()=>{
     container.innerHTML="";
 
     getDetails(query).then(results=>{
+
+
+        //checking if the resultant array has size 0 which means no details found for the searched movie
+
         if(results.length<=0){
             container.innerHTML=`
                 <div id="errorCont">
-                <p>Oops No Results Found!!!</p>
+                <p>Oops No Results Found!!!</p>             
                 <p>Try again with another keyword</p>
                 </div>
             `
@@ -79,8 +83,7 @@ searchBtn.addEventListener('click',()=>{
                         // Adding eventlistener to each newly created div to show
                         // details of individual movies
                 
-                
-
+            
                 newDiv.addEventListener('click',(event)=>{
 
                     if(event.target.tagName=='BUTTON'){
@@ -128,8 +131,10 @@ function updateFavourites(){
                 if(event.target.tagName=='BUTTON'){
                     let index=favArr.indexOf(element);
                     delete favArr[index];
-                    console.log(favArr)
+                    
                     updateFavourites();
+                }else{
+                    showDetails(element);
                 }
             })
         })
